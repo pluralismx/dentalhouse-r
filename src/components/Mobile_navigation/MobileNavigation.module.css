@@ -1,0 +1,54 @@
+.MobileMenuModal {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 1rem;
+    position: fixed;
+    background-color: var(--shadows);
+    box-shadow: 0px 3px 6px var(--shadows);
+    display: block;
+    z-index: 100;
+  
+    /* Define the animation */
+    animation-name: slideFromLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+  }
+  
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+/* h1 */
+.title {
+    margin-bottom: 1rem;
+    color: var(--basic);
+}
+
+/* ul */
+.mobileMenu {
+    list-style: none;
+}
+
+.mobileMenu li {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid black;
+    color: var(--basic);
+    display: flex;
+    align-items: center;
+}
+
+.selected {
+    background-color: var(--primary);
+}
+
+.mobileMenu li img {
+    width: 20px;
+    margin-right: 1rem;
+}

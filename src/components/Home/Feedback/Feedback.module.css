@@ -1,0 +1,33 @@
+.feedbackSection {
+    background-image: url('../../../assets/images/postive-girl.jpeg');
+    background-size: cover;
+    height: 60vh;
+    position: relative;
+}
+
+.cardCarousel {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.commentContainer {
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(8, 143, 117, .6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.titleHeading {
+    color: var(--basic);
+    font-size: 2rem;
+}
+      
+
