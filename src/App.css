@@ -11,18 +11,11 @@
   --shadows: #0a0a0a;
 }
 
-/* Layout */
-
-.layout {
-  width: 100vw;
-  height: 100vh;
-  box-sizing: border-box;
-}
-
 /* Anchors */
 
 a {
   color: inherit;
   text-decoration: none;
 }
+
 

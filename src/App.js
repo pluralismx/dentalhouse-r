@@ -1,17 +1,18 @@
 import { Routes, Route } from 'react-router-dom'
 import React, { useState } from 'react';
 import './App.css';
-// Website
-import NavigationbarComponent from './components/Navigationbar/NavigationbarComponent'
-import MobileNavigationComponent from './components/Mobile_navigation/MobileNavigationComponent';
-import HomeComponent from './components/Home/HomeComponent'
-import AboutUsComponent from './components/About_us/AboutUsComponent'
-import NewPatientsComponent from './components/New_patients/NewPatientsComponent'
-import TeamComponent from './components/Team/TeamComponent'
-import ServicesComponent from './components/Services/ServicesComponent'
-import ContactComponent from './components/Contact/ContactComponent'
 
+// Navigation
+import MobileNavigationComponent from './components/Navigation/MobileNavigation/MobileNavigationComponent'
+import DesktopNavigationBarComponent from './components/Navigation/DesktopNavigationBar/DesktopNavigationBarComponent'
 
+// Pages
+import HomePage from './components/Pages/Home/HomePage'
+import AboutPage from './components/Pages/About/AboutPage'
+import ServicesPage from './components/Pages/Services/ServicesPage'
+import NewPatientsPage from './components/Pages/NewPatients/NewPatientsPage'
+import AppointmentsPage from './components/Pages/Appointments/AppointmentsPage'
+import ContactPage from './components/Pages/Contact/ContactPage'
 
 function App() {
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
@@ -22,15 +23,15 @@ function App() {
 
   return (
     <div className="layout">
-      <NavigationbarComponent toggleMenu={toggleMenu}/>
+      <DesktopNavigationBarComponent toggleMenu={toggleMenu}/>
       {toggleMobileMenu && <MobileNavigationComponent toggleMenu={toggleMenu}/>}
       <Routes>
-        <Route path="/" element={<HomeComponent />} />
-        <Route path="/about" element={<AboutUsComponent />} />
-        <Route path="/patients" element={<NewPatientsComponent />} />
-        <Route path="/team" element={<TeamComponent />} />
-        <Route path="/services" element={<ServicesComponent />} />
-        <Route path="/contact" element={<ContactComponent />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/patients" element={<NewPatientsPage />} />
+        <Route path="/team" element={<AppointmentsPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </div>
   );
