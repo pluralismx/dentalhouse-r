@@ -4,7 +4,7 @@ import './App.css';
 
 // Navigation
 import MobileNavigationComponent from './components/Navigation/MobileNavigation/MobileNavigationComponent'
-import DesktopNavigationBarComponent from './components/Navigation/DesktopNavigationBar/DesktopNavigationBarComponent'
+import NavigationBarComponent from './components/Navigation/NavigationBar/NavigationBarComponent'
 
 // Pages
 import HomePage from './components/Pages/Home/HomePage'
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="layout">
-      <DesktopNavigationBarComponent toggleMenu={toggleMenu}/>
+      <NavigationBarComponent toggleMenu={toggleMenu}/>
       {toggleMobileMenu && <MobileNavigationComponent toggleMenu={toggleMenu}/>}
       <Routes>
         <Route path="/" element={<HomePage />} />
