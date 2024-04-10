@@ -33,6 +33,7 @@
 /* ul */
 .mobileMenu {
     list-style: none;
+    padding: 0;
 }
 
 .mobileMenu li {

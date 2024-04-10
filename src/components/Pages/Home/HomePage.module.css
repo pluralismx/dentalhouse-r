@@ -1,3 +1,420 @@
-.Page {
+/* Banner */
+.BannerSectionWrapper{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+.BannerVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.BannerText {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 80, 100, .3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2.5rem;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.SubHeader {
+    color: var(--basic);
+    margin-bottom: .5rem;
+}
+
+.MainHeading {
+    font-size: 2.5rem;
+    color: var(--basic);
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 6px var(--shadows);
+}
+
+@media only screen and (min-width: 1024px) {
+    .BannerSectionWrapper {
+        height: 100%;
+    }
+        
+    .BannerText {
+        justify-content: center;
+    }
+    
+    .SubHeader {
+        margin-bottom: .5rem;
+    }
+    
+    .MainHeading {
+        font-size: 4rem;
+    }
+}
+
+/* Quick contact */
+.QuickContactSectionWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.QuickContactBrick {
+    background-color: var(--primary);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 6px var(--shadows);
+    text-align: center;
+    color: var(--basic);
+}
+
+.SocialIconContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.SocialIconChip {
+    background-color: var(--primary);
+    padding: .5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 6px var(--shadows);
+}
+
+.SocialIconChip img {
+    width: 35px;
+}
+
+@media only screen and (min-width: 1024px) {
+    .QuickContactSectionWrapper {
+        display: none;
+    }
+}
+
+/* Welcome section */
+
+.WelcomeSectionWrapper {
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    margin-bottom: 5%;
+}
+
+.WelcomeSectionBody {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.WelcomeSectionText {
+    padding: 0;
+}
+
+.WelcomeSectionText h1{
+   color: var(--primary);
+   font-size: 2.5rem;
+   margin-bottom: 1rem;
+}
+
+.WelcomeSectionText p {
+    font-size: 1rem;
+}
+
+.WelcomeSectionBody img {
+    border-radius: .5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .WelcomeSectionWrapper {
+        margin: 0 10%;
+        margin-bottom: 5%;
+    }
+
+    .WelcomeSectionBody {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .WelcomeSectionText {
+        padding-right: 2rem;
+        width: 50%;
+    }
+
+    .WelcomeSectionText p {
+        font-size: 1.5rem;
+    }
+
+    .WelcomeSectionBody img {
+        margin: 0;
+        width: 45%;
+    }
+}
+
+/* Offers */
+
+.OffersSectionContainer {
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    margin-bottom: 5%;
+}
+
+.OfferSectionContainerHeader h1{
+    color: var(--accent);
+}
+
+.OffersSectionContainerBody {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.OffersSectionContainerBody2 {
+    text-align: left;
+}
+
+.OffersSectionContainerFooter {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.OfferCard {
+    flex: 0 1 calc((100% / 3) - 1rem);
+    margin: .5rem;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px var(--shadows);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.OfferCardHeader {
+    padding: .5rem;
+}
+
+.OfferCardHeader h1 {
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.OfferCardBody {
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.OfferCardBody img {
+    width: 50px;
+}
+
+.OfferCardFooter {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.OfferCardFooter button {
+    font-size: 12px;
+    padding: 4px;
+    width: 90%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .OffersSectionContainer {
+        padding: 0 10%;
+    }
+
+    .OfferSectionContainerHeader {
+        margin-bottom: 2rem;
+    }
+
+    .OffersSectionContainerBody {
+        justify-content: space-around;
+    }
+
+    .OfferCard {
+        flex: 0 1 25%;
+        border-radius: .5rem;
+        box-shadow: 2px 2px 5px var(--shadows);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .OfferCardHeader {
+        padding: 1rem;
+    }
+    
+    .OfferCardHeader h1 {
+        font-size: 1.5rem;
+        color: var(--primary);
+        padding-bottom: .5rem;
+        border-bottom: 2px solid var(--primary);
+    }
+    
+    .OfferCardBody {
+        padding:  4rem .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .OfferCardBody img {
+        width: 45%;
+        filter: drop-shadow(2px 2px 3px #333);
+    }
+    
+    .OfferCardFooter {
+        padding: 1rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .OfferCardFooter button {
+        font-size: 1rem;
+        padding: .5rem;
+        width: 40%;
+    }
+
+    .OffersSectionContainerBody2 {
+        margin-top: 2rem;
+    }
+
+    .OffersSectionContainerBody2 p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Insurances */
+.InsurancesSectionContainer {
+    padding: 1rem;
+}
+
+.InsurancesSectionContainerBody {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+}
+
+.InsurancesSectionContainerBodyText {
     
 }
+
+.LogoCard {
+    box-sizing: border-box;
+    border-radius: .5rem;
+    width: 100%;
+    box-shadow: 2px 2px 4px var(--shadows);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.LogoCard img {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .InsurancesSectionContainer {
+        padding: 0 10%;
+    }
+
+    .InsurancesSectionContainerHeader {
+        padding: 0px;
+    }
+
+    .InsurancesSectionContainerBody {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .InsurancesSectionContainerBodyText {
+        width: 50%;
+        padding-right: 2rem;
+    }
+
+    .InsurancesSectionContainerBodyText p {
+        font-size: 1.5rem;
+    }
+
+    .InsurancesSectionContainerBodyCards {
+        padding-left: 2rem;
+        width: 50%;
+    }
+
+    .LogoCard img {
+        width: 50%;
+    }
+}
+
+/* Testimonials */
+.TestimonialsSectionWrapper {
+    padding: 1rem;
+    background-image: url('../../../assets/images/postive-girl.jpeg');
+}
+
+.TestimonialCard {
+    border-radius: .5rem;
+    background-color: aqua;
+}
+
+.TestimonialCardBody {
+    padding: 1rem;
+}
+
+.TestimonialCardFooter {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TestimonialCardInitialLetter {
+    border-radius: 50%;
+    padding: .5rem;
+    background-color: #333;
+}
+
+/* Contact section */
+.ContactSectionWrapper {
+    padding: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+    .ContactSectionWrapper {
+        padding: 0 10%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
