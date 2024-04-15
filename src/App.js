@@ -14,6 +14,9 @@ import NewPatientsPage from './components/Pages/NewPatients/NewPatientsPage'
 import AppointmentsPage from './components/Pages/Appointments/AppointmentsPage'
 import ContactPage from './components/Pages/Contact/ContactPage'
 
+// Tools
+import SocialButtonsComponent from './components/Partials/SocialButtons/SocialButtonsComponent'
+
 function App() {
   const [toggleMobileMenu, setToggleMobileMenu] = useState(false);
 
@@ -33,6 +36,7 @@ function App() {
         <Route path="/team" element={<AppointmentsPage />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
+      <SocialButtonsComponent />
     </div>
   );
 }

@@ -11,8 +11,28 @@
     --shadows: #0a0a0a;
 }
 
+@font-face {
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+    font-family: 'Regular';
+}
+
+@font-face {
+    src: url('./assets/fonts/Poppins-Light.ttf');
+    font-family: 'light';
+}
+
+p {
+    font-family: 'Light';
+}
+
+body {
+    font-family: 'Regular';
+}
+
+
 /* Layout */
 .layout {
+
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: 8vh 92vh;
@@ -156,6 +176,11 @@ p {
     margin-bottom: 1rem;
     line-height: 1.5;
 
+}
+
+.leyend {
+    font-size: 12px;
+    font-style: italic;
 }
 
 /* Buttons */

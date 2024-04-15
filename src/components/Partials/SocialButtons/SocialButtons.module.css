@@ -1,0 +1,37 @@
+.IconsContainer {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1024px){
+    .IconsContainer {
+        position: fixed;
+        z-index: 100;
+        background-color: transparent;
+        height: 8rem;
+        bottom: 55%;
+        right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .IconChip {
+        background-color: var(--primary);
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 3px 3px 12px var(--shadows);
+    }
+
+    .IconChip:hover{
+        background-color: var(--accent);
+        cursor: pointer;
+    }
+
+    .IconChip img {
+        width: 2rem;
+    }
+}

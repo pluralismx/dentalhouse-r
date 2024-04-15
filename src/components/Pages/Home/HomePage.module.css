@@ -4,7 +4,6 @@
     height: 60%;
     overflow: hidden;
     position: relative;
-    margin-bottom: 5%;
 }
 
 .BannerVideo {
@@ -85,6 +84,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .SocialIconChip {
@@ -112,7 +112,18 @@
 .WelcomeSectionWrapper {
     box-sizing: border-box;
     padding: 1rem 1rem;
-    margin-bottom: 5%;
+    background-color: var(--primary);
+}
+
+.WelcomeSectionHeader {
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.WelcomeSectionHeader h1 {
+    font-size: 1.5rem;
+    color:var(--basic);
 }
 
 .WelcomeSectionBody {
@@ -124,14 +135,9 @@
     padding: 0;
 }
 
-.WelcomeSectionText h1{
-   color: var(--primary);
-   font-size: 2.5rem;
-   margin-bottom: 1rem;
-}
-
 .WelcomeSectionText p {
     font-size: 1rem;
+    color: var(--basic);
 }
 
 .WelcomeSectionBody img {
@@ -142,8 +148,21 @@
 
 @media only screen and (min-width: 1024px) {
     .WelcomeSectionWrapper {
-        margin: 0 10%;
-        margin-bottom: 5%;
+        padding: 0 10%;
+        padding-bottom: 4rem;
+        background-color: #fff;
+    }
+
+    .WelcomeSectionHeader {
+        box-sizing: border-box;
+        border-bottom: 2px solid var(--primary);
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .WelcomeSectionHeader h1 {
+        font-size: 2.5rem;
+        color:var(--shadows);
     }
 
     .WelcomeSectionBody {
@@ -158,6 +177,7 @@
 
     .WelcomeSectionText p {
         font-size: 1.5rem;
+        color: var(--shadows);
     }
 
     .WelcomeSectionBody img {
@@ -168,29 +188,26 @@
 
 /* Offers */
 
-.OffersSectionContainer {
+.OffersSectionWrapper {
     box-sizing: border-box;
     padding: 1rem 1rem;
-    margin-bottom: 5%;
 }
 
-.OfferSectionContainerHeader h1{
-    color: var(--accent);
+.OffersSectionHeader {
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--primary);
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.OffersSectionHeader h1{
+    color: var(--shadows);
+    font-size: 1.5rem;
 }
 
 .OffersSectionContainerBody {
     display: flex;
     margin-bottom: 2rem;
-}
-
-.OffersSectionContainerBody2 {
-    text-align: left;
-}
-
-.OffersSectionContainerFooter {
-    padding: 1rem 0;
-    display: flex;
-    justify-content: center;
 }
 
 .OfferCard {
@@ -201,6 +218,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: var(--basic);
 }
 
 .OfferCardHeader {
@@ -209,7 +227,7 @@
 
 .OfferCardHeader h1 {
     font-size: 1rem;
-    color: var(--primary);
+    color: var(--shadows);
 }
 
 .OfferCardBody {
@@ -221,6 +239,7 @@
 
 .OfferCardBody img {
     width: 50px;
+    filter: drop-shadow(2px 2px 4px #333);
 }
 
 .OfferCardFooter {
@@ -233,15 +252,37 @@
     font-size: 12px;
     padding: 4px;
     width: 90%;
+    background-color: #333;
+}
+
+.OffersSectionContainerBody2 {
+    text-align: left;
+}
+
+.OffersSectionContainerFooter {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 1024px) {
-    .OffersSectionContainer {
+
+    .OffersSectionWrapper {
         padding: 0 10%;
+        padding-bottom: 4rem;
+        background-color: #fff;
     }
 
-    .OfferSectionContainerHeader {
-        margin-bottom: 2rem;
+    .OffersSectionHeader {
+        box-sizing: border-box;
+        border-bottom: 2px solid var(--primary);
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .OffersSectionHeader h1{
+        color: var(--shadows);
+        font-size: 2.5rem;
     }
 
     .OffersSectionContainerBody {
@@ -263,7 +304,7 @@
     
     .OfferCardHeader h1 {
         font-size: 1.5rem;
-        color: var(--primary);
+        color: var(--shadows);
         padding-bottom: .5rem;
         border-bottom: 2px solid var(--primary);
     }
@@ -290,6 +331,7 @@
         font-size: 1rem;
         padding: .5rem;
         width: 40%;
+        background-color: #333;
     }
 
     .OffersSectionContainerBody2 {
@@ -300,11 +342,34 @@
         font-size: 1.5rem;
         text-align: center;
     }
+
+    .OffersSectionContainerFooter button{
+        padding: 1rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 2px 2px 4px var(--shadows);
+    }
+
+    .OffersSectionContainerFooter button:hover{
+        background-color: var(--primary);
+    }
 }
 
 /* Insurances */
 .InsurancesSectionContainer {
     padding: 1rem;
+    background-color: #fff;
+}
+
+.InsurancesSectionHeader {
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 2rem;
+}
+
+.InsurancesSectionHeader h1 {
+    color: var(--shadows);
+    font-size: 1.5rem;
 }
 
 .InsurancesSectionContainerBody {
@@ -313,8 +378,8 @@
     padding: 0;
 }
 
-.InsurancesSectionContainerBodyText {
-    
+.InsurancesSectionContainerBodyText p{
+    color: var(--shadows);
 }
 
 .LogoCard {
@@ -328,6 +393,7 @@
     display: flex;
     align-items: center;
     justify-self: center;
+    background-color: #fff;
 }
 
 .LogoCard img {
@@ -338,10 +404,19 @@
 
     .InsurancesSectionContainer {
         padding: 0 10%;
+        padding-bottom: 4rem;
     }
 
-    .InsurancesSectionContainerHeader {
-        padding: 0px;
+    .InsurancesSectionHeader {
+        box-sizing: border-box;
+        border-bottom: 2px solid var(--primary);
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    
+    .InsurancesSectionHeader h1 {
+        color: var(--shadows);
+        font-size: 2.5rem;
     }
 
     .InsurancesSectionContainerBody {
@@ -369,44 +444,123 @@
     }
 }
 
-/* Testimonials */
-.TestimonialsSectionWrapper {
+
+/* Partners */
+.PartnersSectionWrapper {
     padding: 1rem;
-    background-image: url('../../../assets/images/postive-girl.jpeg');
+    margin-bottom: 2rem;
 }
 
-.TestimonialCard {
-    border-radius: .5rem;
-    background-color: aqua;
+.PartnersSectionHeader {
+    border-bottom: 2px solid var(--primary);
+    padding-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-.TestimonialCardBody {
-    padding: 1rem;
+.PartnersSectionHeader h1 {
+    color: var(--shadows);
+    font-size: 1.5rem;
 }
 
-.TestimonialCardFooter {
-    padding: 1rem;
+.PartnersSectionBody {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.TestimonialCardInitialLetter {
-    border-radius: 50%;
-    padding: .5rem;
-    background-color: #333;
+.ProductCard {
+    flex: 0 1 calc(50% - 12px);
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+    box-shadow: 2px 2px 4px var(--shadows);
+    border-radius: 1rem;
+}
+
+.PartnersLogo {
+    width: 100px;
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .PartnersSectionWrapper {
+        padding: 0 10%;
+        padding-bottom: 4rem;
+        background-color: #fff;
+    }
+
+    .PartnersSectionHeader {
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+        border-bottom: 2px solid var(--primary); 
+    }
+    
+    .PartnersSectionHeader h1 {
+        color: var(--shadows);
+        font-size: 2.5rem;
+    }
+
+    .ProductCard {
+        flex: 0 1 calc(25% - 2rem);
+        height: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        box-shadow: 2px 2px 4px var(--shadows);
+        border-radius: 1rem;
+    }
+
+    .PartnersLogo {
+        width: 150px;
+    }
+
+
 }
 
 /* Contact section */
 .ContactSectionWrapper {
     padding: 1rem;
+    background-image: linear-gradient(to bottom, var(--primary), var(--dark));
+}
+
+.ConctactSectionHeader {
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.ConctactSectionHeader h1 {
+    font-size: 1.5rem;
+    color: var(--basic);
 }
 
 @media only screen and (min-width: 1024px) {
     .ContactSectionWrapper {
+        margin: 0;
         padding: 0 10%;
+        padding-bottom: 4rem;
+        background-image: none;
+        background-color: white;
+    }
+
+    .ConctactSectionHeader {
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+        border-bottom: 2px solid var(--primary); 
+    }
+    
+    .ConctactSectionHeader h1 {
+        color: var(--shadows);
+        font-size: 2.5rem;
     }
 }
+
+
 
 
 

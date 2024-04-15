@@ -42,6 +42,7 @@ class ContactSectionComponent extends Component {
                                 <div className={styles.InputBlock}>
                                     <textarea placeholder='Cómo lo podemos ayudar?'></textarea>
                                 </div>
+                                <button className={ styles.ContactButton }>send</button>
                             </div>
                         </div>
                     </div>

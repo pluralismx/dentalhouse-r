@@ -4,7 +4,7 @@
 }
 
 .SocialIconChip img {
-    width: 40px;
+    width: 30px;
 }
 
 .SocialIconChip {
@@ -15,4 +15,10 @@
     padding: .5rem;
     margin-right: 1rem;
     box-shadow: 3px 3px 4px var(--shadows);
+}
+
+@media only screen and (min-width: 1024px) {
+    .SocialIconChip img {
+        width: 40px;
+    }
 }

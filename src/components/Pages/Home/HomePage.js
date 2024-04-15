@@ -1,17 +1,27 @@
 import React, { Component } from 'react'
 import styles from './HomePage.module.css'
+import TestimonialsSectionComponent from './Testimonials/TestimonialsSectionComponent'
 import ContactSectionComponent from '../../Partials/ContactSection/ContactSectionComponent'
 import facebook from '../../../assets/images/facebook-white.png'
 import instagram from '../../../assets/images/instagram-white.png'
 import google from '../../../assets/images/google-white.png'
 import whatsapp from '../../../assets/images/whatsapp-white.png'
 import woman from '../../../assets/images/intro-woman.jpeg'
-import implant_icon from '../../../assets/images/dental-implant.png'
-import braces_icon from '../../../assets/images/braces.png'
-import root_icon from '../../../assets/images/root-canal.png'
+import implant_icon from '../../../assets/images/dental-implant-white.png'
+import braces_icon from '../../../assets/images/braces-white.png'
+import root_icon from '../../../assets/images/root-canal-white.png'
 import aetna from '../../../assets/images/aetna.png'
 import deltadent from '../../../assets/images/delta-dental.png'
 import metlife from '../../../assets/images/metlife.png'
+import carestream from '../../../assets/images/carestream.png'
+import coltene from '../../../assets/images/coltene.png'
+import septodont from '../../../assets/images/septodont.png'
+import dentsply from '../../../assets/images/dentsply.png'
+import ultradent from '../../../assets/images/ultradent.png'
+import ormco from '../../../assets/images/ormco.png'
+import straumann from '../../../assets/images/straumann.png'
+import ortho from '../../../assets/images/orthotechnology.png'
+import FooterSectionComponent from '../../../components/Navigation/Footer/FooterSectionComponent'
 
 class HomePage extends Component {
 
@@ -56,8 +66,8 @@ class HomePage extends Component {
                 </section>
                 {/* Welcome */}
                 <section className={ styles.WelcomeSectionWrapper }>
-                <div className="PageTitleContainer">
-                        <h1 className="PageTitleHeading">Your trusted dentist</h1>
+                    <div className={ styles.WelcomeSectionHeader }>
+                        <h1>Your trusted dentist</h1>
                     </div>
                     <div className= { styles.WelcomeSectionBody }>
                         <div className={ styles.WelcomeSectionText}>
@@ -80,9 +90,9 @@ class HomePage extends Component {
                     </div>
                 </section>
                 {/* Offers */}
-                <section className={ styles.OffersSectionContainer }>
-                    <div className="PageTitleContainer">
-                        <h1 className="PageTitleHeading">All services in one place</h1>
+                <section className={ styles.OffersSectionWrapper}>
+                    <div className={ styles.OffersSectionHeader }>
+                        <h1>All services in one place</h1>
                     </div>
                     <div className={ styles.OffersSectionContainerBody }>
                         {/* Card 1 */}
@@ -139,8 +149,8 @@ class HomePage extends Component {
                 </section>
                 {/* Insurances */}
                 <section className={ styles.InsurancesSectionContainer }>
-                    <div className="PageTitleContainer">
-                        <h1 className="PageTitleHeading">Accepted Insurances</h1>
+                    <div className={ styles.InsurancesSectionHeader }>
+                        <h1>Accepted Insurances</h1>
                     </div>
                     <div className={ styles.InsurancesSectionContainerBody }>
                         <div className={ styles.InsurancesSectionContainerBodyText }>
@@ -170,42 +180,47 @@ class HomePage extends Component {
                     </div>
                 </section>
                 {/* Testimonials */}
-                <section className={ styles.TestimonialsSectionWrapper }>
-                    <div className="PageTitleContainer">
-                        <h1 className="PageTitleHeading">Satisfaction</h1>
+                <TestimonialsSectionComponent />
+                {/* Partners */}
+                <section className={ styles.PartnersSectionWrapper }>
+                    <div className={ styles.PartnersSectionHeader }>
+                        <h1>Partners & Products</h1>
                     </div>
-                    <div className={ styles.TestimonialsSectionBody }>
-                        <div className={ styles.TestimonialCard }>
-                            <div className={ styles.TestimonialCardBody }>
-                                <p>
-                                    I love the serivce.
-                                </p>
-                            </div>
-                            <div className={ styles.TestimonialCardFooter }>
-                                <div className={ styles.TestimonialCardInitialLetter }>
-                                    A.
-                                </div>
-                                <span>
-                                    Anthony Cocksucker
-                                </span>
-                            </div>
+                    <div className={ styles.PartnersSectionBody}>
+                        <div className={ styles.ProductCard }>
+                            <img className={ styles.PartnersLogo } src={ carestream }/>
+                        </div>
+                        <div className={ styles.ProductCard }>
+                            <img className={ styles.PartnersLogo } src={ coltene }/>
+                        </div>
+                        <div className={ styles.ProductCard }>
+                            <img className={ styles.PartnersLogo } src={ septodont }/>
+                        </div>
+                        <div className={ styles.ProductCard }>
+                            <img className={ styles.PartnersLogo } src={ dentsply }/>
+                        </div>
+                        <div className={ styles.ProductCard }>
+                            <img width={"70px"} src={ ultradent }/>
+                        </div>
+                        <div className={ styles.ProductCard }>
+                            <img className={ styles.PartnersLogo } src={ ormco }/>
+                        </div>
+                        <div className={ styles.ProductCard }>
+                            <img className={ styles.PartnersLogo } src={ straumann }/>
+                        </div>
+                        <div className={ styles.ProductCard } >
+                            <img src={ ortho } width={"70px"} />
                         </div>
                     </div>
                 </section>
-                {/* Services */}
-                <section></section>
-                {/* Location */}
-                <section></section>
                 {/* Contact */}
                 <section className={ styles.ContactSectionWrapper }>
-                <div className="PageTitleContainer">
-                    <h1 className="PageTitleHeading">
-                        Contacto
-                    </h1>
-                </div>
-                <ContactSectionComponent />
+                    <div className={ styles.ConctactSectionHeader }>
+                        <h1>Contacto</h1>
+                    </div>
+                    <ContactSectionComponent />
                 </section>
-
+                <FooterSectionComponent />
             </section>
         );
     }

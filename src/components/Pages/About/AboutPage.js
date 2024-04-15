@@ -3,6 +3,8 @@ import styles from './AboutPage.module.css'
 import sign from '../../../assets/images/archive_picture_1.jpeg'
 import ContactSectionComponent from '../../Partials/ContactSection/ContactSectionComponent';
 import FooterSectionComponent from '../../Navigation/Footer/FooterSectionComponent';
+import norma from '../../../assets/images/norma.jpeg'
+import dentists from '../../../assets/images/omar_y_claudia.jpeg'
 
 class AboutPage extends Component {
 
@@ -18,6 +20,10 @@ class AboutPage extends Component {
                             </h1>
                         </div>
                         <div className={styles.Sheet}>
+                            <div className={ styles.smallBanner }>
+                                <img src={ norma } className={ styles.headerPicture }/>
+                                <span className="leyend">Dr. Norma Alicia Pérez founder of Dental House</span>
+                            </div>
                             <div className={styles.TwoColumnsContainer}>
                                 {/* Text */}
                                 <div className={styles.ColumnText}>
@@ -44,7 +50,7 @@ class AboutPage extends Component {
                                     <div class={styles.CellphonePicture}>
                                         <br/>
                                         <img src={ sign } width={'100%'} />
-                                        <span>Letrero luminoso de Dental House en sus inicios ca. 1987 </span>
+                                        <span className="leyend">Letrero luminoso de Dental House en sus inicios ca. 1987 </span>
                                         <br/>
                                         <br/>
                                     </div>
@@ -70,11 +76,13 @@ class AboutPage extends Component {
                                 </div>
                             </div>
                         </div>
+                        <img className={ styles.DentistsImage } src={ dentists }/>
                         <div className="PageTitleContainer">
                             <h1 className="PageTitleHeading">
                                 Contacto
                             </h1>
                         </div>
+
                         <ContactSectionComponent />
                     </div>
                 </section>
