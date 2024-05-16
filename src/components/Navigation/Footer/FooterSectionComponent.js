@@ -4,6 +4,7 @@ import facebook from '../../../assets/images/facebook.png'
 import instagram from '../../../assets/images/instagram.png'
 import google from '../../../assets/images/google.png'
 import whatsapp from '../../../assets/images/whatsapp.png'
+import SignatureComponent from '../../Partials/Signature/SignatureComponent'
 
 class FooterSectionComponent extends Component {
     render() {
@@ -36,33 +37,37 @@ class FooterSectionComponent extends Component {
                         {/* Hours of operation */}
                         <div className="FooterBlock">
                             <div className="FooterBlockHeading">
-                                <h1>Horario</h1>
+                                <h1>Office Hours</h1>
                             </div>
                             <div className="FooterBlockBody">
                                 <p>
-                                    lunes a viernes 9 am - 5 pm
+                                    Monday to Friday 9 am - 5 pm
                                 </p>
                                 <p>
-                                    Sábados 9 am - 2 pm
+                                    Saturday 9 am - 2 pm
                                 </p>
                                 <p>
-                                    Domingos Cerrado
+                                    Sundays closed
                                 </p>
                             </div>
                         </div>
                         {/* Contact */}
                         <div className="FooterBlock">
                             <div className="FooterBlockHeading">
-                                <h1>Contacto</h1>
+                                <h1>Address</h1>
                             </div>
                             <div className="FooterBlockBody">
                                 <p>
                                     Blvd. Alberto Limón Padilla 22-2, Fovissste, 22510, Tijuana, B.C.
                                 </p>
+                                <p>
+                                    <span>Phone: </span><a href="tel:+526646232236">+52 664 623 2236</a>
+                                </p>
                             </div>
                         </div>
                     </footer>
                 </div>
+                <SignatureComponent/>
             </section>
         );
     }

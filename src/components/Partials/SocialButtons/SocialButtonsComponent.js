@@ -10,18 +10,26 @@ class SocialButtonsComponent extends Component {
     render() {
         return(
             <div className={ styles.IconsContainer }>
-                <div className={ styles.IconChip }>
-                    <img src={ facebook }/>
-                </div>
-                <div className={ styles.IconChip }>
-                    <img src={ instagram }/>
-                </div>
-                <div className={ styles.IconChip }>
-                    <img src={ google }/>
-                </div>
-                <div className={ styles.IconChip }>
-                    <img src={ whatsapp }/>
-                </div>
+                <a href="https://www.facebook.com/DentalHOUSEOtay">
+                    <div className={ styles.IconChip }>
+                        <img src={ facebook }/>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/dentalhousetijuana/">
+                    <div className={ styles.IconChip }>
+                        <img src={ instagram }/>
+                    </div>
+                </a>
+                <a href="https://maps.app.goo.gl/bgQNDTXaMUsLQRMs5">
+                    <div className={ styles.IconChip }>
+                        <img src={ google }/>
+                    </div>
+                </a>
+                <a href="https://wa.me/526648271147">
+                    <div className={ styles.IconChip }>
+                        <img src={ whatsapp }/>
+                    </div>
+                </a>
             </div>
         );
     }

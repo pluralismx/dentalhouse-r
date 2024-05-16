@@ -26,7 +26,7 @@ class ServicesPage extends Component {
                         {/* Title */}
                         <div className="PageTitleContainer">
                             <h1 className="PageTitleHeading">
-                                Servicios
+                                Services
                             </h1>
                         </div>
                         {/* Intro */}
@@ -35,157 +35,176 @@ class ServicesPage extends Component {
                                 <img src={ friends }/>
                             </div>
                             <div className={ styles.TextContainer}>
-                                <h1>Variedad de servicios en un solo lugar</h1>
+                                <h1>Variety of services in one place</h1>
                                 <p>
-                                    En Dental House Tijuana, nos dedicamos a proporcionar una 
-                                    gama completa de servicios dentales para usted y su familia. 
-                                    Nuestro equipo de profesionales altamente capacitados se 
-                                    compromete a brindarle la más alta calidad de atención dental. 
-                                    Desde la prevención de problemas dentales hasta el tratamiento 
-                                    de afecciones actuales, estamos aquí para cuidar de su salud 
-                                    bucal de manera integral en cada visita.
+                                    At Dental House Tijuana, we are dedicated to providing a full range of dental services for you and your family. Our team of highly trained professionals is committed to delivering the highest quality of dental care. From preventing dental problems to treating existing conditions, we are here to take comprehensive care of your oral health at every visit.
                                 </p>
                                 <ul>
-                                    <li>Carillas</li>
-                                    <li>Dentadura postiza</li>
-                                    <li>Coronas de porcelana</li>
-                                    <li>Implantes dentales</li>
-                                    <li>Ortodoncia</li>
-                                    <li>Endodoncia</li>
-                                    <li>Odontologia general</li>
-                                    <li>Lista de precios MX VS USA</li>
+                                    <li><a href="#veneers">Veneers</a></li>
+                                    <li><a href="#dentures">Dentures</a></li>
+                                    <li><a href="#crowns">Crowns</a></li>
+                                    <li><a href="#implants">Implants</a></li>
+                                    <li><a href="#ortho">Orthodontics</a></li>
+                                    <li><a href="#endodontics">Endodontics</a></li>
+                                    <li><a href="#gral">General dentistry</a></li>
+                                    <li><a href="#prices">Price list MX VS USA</a></li>
                                 </ul>
                             </div>
                         </div>
                         {/* Veneers */}
-                        <div className={ styles.Article }>
+                        <div className={ styles.Article } id="veneers">
                             <div className={ styles.PictureContainer}>
                                 <img src={ veneers }/>
                                 <div className={styles.PictureContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                             <div className={ styles.TextContainer}>
-                                <h1>Carillas</h1>
+                                <h1>Veneers</h1>
                                 <p>
-                                Las carillas de porcelana son finas capas hechas a medida de materiales del color de los dientes diseñadas para cubrir la superficie frontal de los dientes y mejorar la apariencia. Estas conchas se adhieren a la parte frontal de los dientes cambiando su color, forma, tamaño o longitud. Recomendamos este tratamiento a cualquier persona que experimente una decoloración que no se pueda solucionar con blanqueamiento o si tiene los dientes dañados. Las carillas de porcelana también son una opción si no estás satisfecho con la forma o el aspecto de tus dientes naturales.
-                                </p>
+                                    Porcelain veneers are custom-made, thin layers of tooth-colored materials designed to cover the front surface of teeth and enhance their appearance. These shells are bonded to the front of the teeth, changing their color, shape, size, or length. We recommend this treatment for anyone experiencing discoloration that cannot be resolved with whitening or for those with damaged teeth. Porcelain veneers are also an option if you are not satisfied with the shape or appearance of your natural teeth.                                </p>
                                 <div className={styles.TextContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         {/* Dentures */}
-                        <div className={ styles.Article }>
+                        <div className={ styles.Article } id="dentures">
                             <div className={ styles.PictureContainer}>
                                 <img src={ dentures }/>
                                 <div className={styles.PictureContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                             <div className={ styles.TextContainer}>
-                                <h1>Dentadura postiza</h1>
+                                <h1>Dentures</h1>
                                 <p>
-                                Si le faltan dientes, las dentaduras postizas pueden brindarle una solución positiva para mejorar su salud bucal. Estamos orgullosos de ofrecer dentaduras postizas diseñadas para adaptarse a su boca para un funcionamiento adecuado y una comodidad única. Después de su cita, le brindaremos información sobre el cuidado de su dentadura postiza en el hogar. Recomendamos encarecidamente programar citas de seguimiento para limpiezas periódicas de dentaduras postizas.
-                                </p>
+                                    If you are missing teeth, dentures can provide a positive solution to improve your oral health. We are proud to offer dentures designed to fit your mouth for proper function and unique comfort. After your appointment, we will provide you with information on how to care for your dentures at home. We highly recommend scheduling follow-up appointments for regular denture cleanings.                                </p>
                                 <div className={styles.TextContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         {/* Crowns */}
-                        <div className={ styles.Article }>
+                        <div className={ styles.Article } id="crowns">
                             <div className={ styles.PictureContainer}>
                                 <img src={ crowns }/>
                                 <div className={styles.PictureContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                             <div className={ styles.TextContainer}>
-                                <h1>Coronas de porcelana</h1>
+                                <h1>Crowns</h1>
                                 <p>
-                                Elegir coronas de porcelana es el método ideal para lograr una sonrisa de aspecto notablemente natural. Son la opción preferida cuando no es posible simplemente empastar un diente. Hay situaciones en las que la caries dental es tan extensa que se hacen necesarias coronas de porcelana. Además, se emplean para dientes gravemente dañados o dientes que han sufrido múltiples empastes. Las coronas de porcelana se colocan directamente sobre los dientes, lo que garantiza su funcionalidad, incluso cuando se someten a una fuerte presión de mordida. Hay varios tipos de coronas de porcelana disponibles, por lo que es fundamental consultar con su dentista para determinar la opción más adecuada para usted.
-                                </p>
+                                    Choosing porcelain crowns is the ideal method for achieving a remarkably natural-looking smile. They are the preferred option when simply filling a tooth is not possible. There are situations where dental decay is so extensive that porcelain crowns become necessary. Additionally, they are used for severely damaged teeth or teeth that have undergone multiple fillings. Porcelain crowns are placed directly over the teeth, ensuring their functionality, even under strong biting pressure. There are several types of porcelain crowns available, so it is essential to consult with your dentist to determine the most suitable option for you.                                </p>
                                 <div className={styles.TextContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         {/* Implants */}
-                        <div className={ styles.Article }>
+                        <div className={ styles.Article } id="implants">
                             <div className={ styles.PictureContainer}>
                                 <img src={ implants }/>
                                 <div className={styles.PictureContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                             <div className={ styles.TextContainer}>
-                                <h1>Implantes dentales</h1>
+                                <h1>Implants</h1>
                                 <p>
-                                Cuando le faltan dientes, una solución alternativa a las dentaduras postizas son los implantes dentales. Si bien las dentaduras postizas son removibles, los implantes dentales proporcionan dientes nuevos permanentes para restaurar la función y apariencia de la boca. Los implantes dentales tienden a ofrecer una solución exitosa y duradera a la pérdida de algunos o todos los dientes.
-                                </p>
+                                    When you are missing teeth, an alternative solution to dentures is dental implants. While dentures are removable, dental implants provide permanent new teeth to restore the function and appearance of your mouth. Dental implants tend to offer a successful and long-lasting solution for the loss of some or all teeth.                                </p>
                                 <div className={styles.TextContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                         {/* Ortho */}
-                        <div className={ styles.Article }>
+                        <div className={ styles.Article } id="ortho">
                             <div className={ styles.PictureContainer}>
                                 <img src={ orthodontics }/>
                                 <div className={styles.PictureContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                             <div className={ styles.TextContainer}>
-                                <h1>Ortodoncia</h1>
+                                <h1>Orthodontics</h1>
                                 <p>
-                                Los dientes desalineados o mal colocados pueden restar valor a nuestra apariencia. La especialidad de ortodoncia se enfoca en corregir dientes y huesos mal colocados mediante la colocación de aparatos ortopédicos y otros dispositivos ortopédicos. Es difícil mantener limpios los dientes desalineados, lo que aumenta el riesgo de pérdida prematura debido a caries y enfermedades de las encías.
-                                </p>
+                                    Misaligned or improperly positioned teeth can detract from our appearance. The specialty of orthodontics focuses on correcting misplaced teeth and bones through the use of braces and other orthodontic devices. Misaligned teeth are difficult to keep clean, increasing the risk of premature loss due to cavities and gum disease.                                </p>
                                 <div className={styles.TextContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                    <button className="btn-accent">get an appointment</button>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
                         {/* Endodontics */}
-                        <div className={ styles.Article }>
+                        <div className={ styles.Article } id="endodontics">
                             <div className={ styles.PictureContainer}>
                                 <img src={ endodontics }/>
                                 <div className={styles.PictureContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                    <button className="btn-accent">get an appointment</button>
+                                    </a>
+                                    
                                 </div>
                             </div>
                             <div className={ styles.TextContainer}>
-                                <h1>Endodoncia</h1>
+                                <h1>Endodontics</h1>
                                 <p>
-                                Un tratamiento odontológico que consiste en la eliminación completa de la pulpa y posterior obturación y sellado tridimensional de los conductos radiculares. Se realiza sobre dientes traumatizados, fracturados o con caries profundas que llegan hasta la pulpa dental, provocando infección y dolor continuo y persistente que se intensifica con estímulos fríos o calientes, alimentos dulces o ácidos. Esta especialidad tiene como objetivo salvar tu diente y sirve como una gran alternativa a la extracción.
-                                </p>
+                                A dental treatment involving the complete removal of the pulp followed by the obturation and three-dimensional sealing of the root canals. It is performed on traumatized teeth, fractured teeth, or teeth with deep cavities that reach the dental pulp, causing infection and continuous, persistent pain that intensifies with cold or hot stimuli, sweet or acidic foods. This specialty aims to save your tooth and serves as a great alternative to extraction.                                </p>
                                 <div className={styles.TextContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                    <button className="btn-accent">get an appointment</button>
+                                    </a>
+                                    
                                 </div>
                             </div>
                         </div>
                         {/* Gral. Dentistry */}
-                        <div className={ styles.Article }>
+                        <div className={ styles.Article } id="gral">
                             <div className={ styles.PictureContainer}>
                                 <img src={ dentistry }/>
                                 <div className={styles.PictureContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                             <div className={ styles.TextContainer}>
-                                <h1>Odontologia general</h1>
+                                <h1>General dentistry</h1>
                                 <p>
-                                Ayudar a nuestros pacientes a mantener una boca y una sonrisa saludables es el principal objetivo de la odontología general. Preferimos brindar atención preventiva menor que ver a los pacientes sufrir con tratamientos más intensivos por un problema que no se resolvió a tiempo. Queremos asegurarnos de que tu salud bucal esté en su estado óptimo y contribuyendo positivamente a la salud de todo tu cuerpo. Estamos aquí para alegrar su sonrisa y allanar el camino hacia una vida mejor.
+                                    Helping our patients maintain a healthy mouth and smile is the primary goal of general dentistry. We prefer to provide minor preventive care than to see patients suffer from more intensive treatments for problems that weren't addressed in time. We want to ensure that your oral health is at its optimum state and positively contributing to the health of your entire body. We are here to brighten your smile and pave the way to a better life.
                                 </p>
                                 <div className={styles.TextContainerFooter}>
-                                    <button className="btn-accent">Pedir una cita</button>
+                                    <a href="#contact">
+                                        <button className="btn-accent">get an appointment</button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div className="PageTitleContainer">
+                        <div className="PageTitleContainer" id="prices">
                             <h1 className="PageTitleHeading">
-                                Comparación de precios
+                                Price comparison
                             </h1>
                         </div>
                         {/* Price comparison */}
@@ -326,9 +345,9 @@ class ServicesPage extends Component {
                             </tbody>
                         </table>
                         {/* Contact */}
-                        <div className="PageTitleContainer">
+                        <div className="PageTitleContainer" id="contact">
                             <h1 className="PageTitleHeading">
-                                Contacto
+                                Contact
                             </h1>
                         </div>
                         <ContactSectionComponent />

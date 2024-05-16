@@ -1,0 +1,39 @@
+.wrapper {
+    margin: 0 2rem;
+}
+
+.signatureText {
+    margin: 0;
+    font-size: 10px;
+}
+
+.container {
+    padding: 1rem 0;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content:center;
+    color: var(--basic);
+}
+
+@media only screen and (min-width: 1024px){
+    .wrapper {
+        margin: 0 10%;
+    }
+    
+    .signatureText {
+        margin: 0;
+        font-size: 16px;
+    }
+    
+    .container {
+        padding: 1.5rem;
+        border-top: 1px solid white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content:center;
+        color: var(--basic);
+    }
+}

@@ -12,9 +12,11 @@ class NavigationBarComponent extends Component {
                 {/* Mobile */}
                 <div className={styles.MobileNavigationbar}>
                     <div>
-                        <img src={Logo} className={styles.MobileNavigationbarLogo} />
+                        <a href="http://www.dentalhouse.mx.nf">
+                            <img src={Logo} className={styles.MobileNavigationbarLogo} />
+                        </a>
                     </div>
-                    <div>
+                    <div className={styles.MenuIconContainer}>
                         <img src={Menu} className={styles.MobileNavigationbarMenu} onClick={this.props.toggleMenu}/>
                     </div>
                 </div>
@@ -26,11 +28,11 @@ class NavigationBarComponent extends Component {
                     </ul>
                     <ul className={styles.DesktopNavigationMenu}>
                         <Link to="/"><li>Home</li></Link>
-                        <Link to="/about"><li>Acerca de</li></Link>
-                        <Link to="/patients"><li>Nuevos pacientes</li></Link>
-                        <Link to="/appointments"><li>Equipo</li></Link>
-                        <Link to="/services"><li>Servicios</li></Link>
-                        <Link to="/contact"><li>Contacto</li></Link>
+                        <Link to="/services"><li>Services</li></Link>
+                        <Link to="/about"><li>About us</li></Link>
+                        {/* <Link to="/patients"><li>Nuevos pacientes</li></Link>
+                        <Link to="/appointments"><li>Equipo</li></Link> */}
+                        <Link to="/contact"><li>Contact</li></Link>
                     </ul>
                 </div>
             </nav>

@@ -10,48 +10,40 @@ import contact from '../../../assets/images/contact-white.png'
 
 class MobileNavigationComponent extends Component {
 
-  state = {
-    activeItem: 0
-  }
+    changeSelection = (index) => {
+        this.props.changeActiveItem(index);
+    }
 
-  selectOption = (index) => {
-    this.setState({
-      activeItem: index
-    });
-  }
-  
-  render() {
-    const { activeItem } = this.state
-
-    return (
-      <div className={styles.MobileMenuModal}>
-        <h1 className={styles.title}>Menu</h1>
-        <ul className={styles.mobileMenu}>
-          {menuItems.map((item, index) => (
-            <li
-              key={index}
-              onClick={() => {
-                this.selectOption(index);
-                this.props.toggleMenu();
-              }}
-              className={index === activeItem ? styles.selected : ''}
-            >
-              <img src={item.icon} alt={item.label} />
-              <Link to={item.path}>{item.label}</Link>
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className={styles.MobileMenuModal}>
+                <h1 className={styles.title}>Menu</h1>
+                <ul className={styles.mobileMenu}>
+                    {menuItems.map((item, index) => (
+                        <Link to={item.path}><li
+                            key={index}
+                            onClick={() => {
+                                this.changeSelection(item.label);
+                                this.props.toggleMenu();
+                            }}
+                            className={item.label === this.props.activeItem ? styles.selected : ''}
+                        >
+                            <img src={item.icon} alt={item.label} />
+                            <span>{item.label}</span>
+                        </li></Link>
+                    ))}
+                </ul>
+            </div>
+        );
+    }
 }
 
 const menuItems = [
-  { icon: home, path: '/', label: 'Inicio' },
-  { icon: about, path: '/about', label: 'Acerca de' },
-  { icon: patients, path: '/patients', label: 'Nuevos pacientes' },
-  { icon: team, path: '/team', label: 'Equipo' },
-  { icon: services, path: '/services', label: 'Servicios' },
-  { icon: contact, path: '/contact', label: 'Contacto' }
+    { icon: home, path: '/', label: 'Home' },
+    { icon: services, path: '/services', label: 'Services' },
+    { icon: about, path: '/about', label: 'About us' },
+    // { icon: patients, path: '/patients', label: 'Nuevos pacientes' },
+    // { icon: team, path: '/team', label: 'Equipo' },
+    { icon: contact, path: '/contact', label: 'Contact' }
 ];
 export default MobileNavigationComponent;

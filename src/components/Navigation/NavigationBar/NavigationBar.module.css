@@ -31,13 +31,28 @@
     transform: translateY(8px);
 }
 
+.MenuIconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .MobileNavigationbarMenu {
     width: 35px;
     margin-right: .5rem;
 }
 
 
-
+@media only screen and (max-width: 375px){
+    .MobileNavigationbarLogo {
+        width: 100px;
+        transform: translateY(8px);
+    }
+    .MobileNavigationbarMenu {
+        width: 30px;
+        margin-right: .5rem;
+    }
+}
 @media only screen and (min-width: 1024px) {
 
     .MobileNavigationbar {

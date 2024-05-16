@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import styles from './HomePage.module.css'
 import TestimonialsSectionComponent from './Testimonials/TestimonialsSectionComponent'
 import ContactSectionComponent from '../../Partials/ContactSection/ContactSectionComponent'
@@ -25,6 +26,10 @@ import FooterSectionComponent from '../../../components/Navigation/Footer/Footer
 
 class HomePage extends Component {
 
+    changeSelection = (index) => {
+        this.props.changeActiveItem(index);
+    }
+
     render(){
         return(
             <section className="Page">
@@ -35,33 +40,49 @@ class HomePage extends Component {
                     <div className={ styles.BannerText}>
                         <h1 className={ styles.SubHeader}>Dentist in Tijuana, B.C.</h1>
                         <h1 className={ styles.MainHeading}>We welcome new patients</h1>
-                        <button className="btn-accent">Request an appointment today</button>
+                        <a href="#contact">
+                            <button className="btn-accent">Request an appointment today</button>
+                        </a>
                     </div>
                 </section>
                 {/* Quick contact */}
                 <section className={ styles.QuickContactSectionWrapper }>
-                    <div className={ styles.QuickContactBrick }>
-                        <span>Call us: +52 {'('}664{')'} 623 2236</span>
-                    </div>
-                    <div className={ styles.QuickContactBrick }>
-                        <span>Get directions</span>
-                    </div>
-                    <div className={ styles.QuickContactBrick }>
-                        <span>Request an appointment</span>
-                    </div>
+                    <a href="tel:+526646232236">
+                        <div className={ styles.QuickContactBrick }>
+                            <span>Call us: +52 {'('}664{')'} 623 2236</span>
+                        </div>
+                    </a>
+                    <a href="#map">
+                        <div className={ styles.QuickContactBrick }>
+                            <span>Get directions</span>
+                        </div>
+                    </a>
+                    <a href="#contact">
+                        <div className={ styles.QuickContactBrick }>
+                            <span>Request an appointment</span>
+                        </div>
+                    </a>
                     <div className={ styles.SocialIconContainer }>
-                        <div className={ styles.SocialIconChip }>
-                            <img src={facebook} />
-                        </div>
-                        <div className={ styles.SocialIconChip }>
-                            <img src={whatsapp} />
-                        </div>
-                        <div className={ styles.SocialIconChip }>
-                            <img src={google} />
-                        </div>
-                        <div className={ styles.SocialIconChip }>
-                            <img src={instagram} />
-                        </div>
+                        <a href="https://www.facebook.com/DentalHOUSEOtay">
+                            <div className={ styles.SocialIconChip }>
+                                <img src={facebook} />
+                            </div>
+                        </a>
+                        <a href="https://wa.me/526648271147">
+                            <div className={ styles.SocialIconChip }>
+                                <img src={whatsapp} />
+                            </div>
+                        </a>
+                        <a href="https://maps.app.goo.gl/bgQNDTXaMUsLQRMs5">
+                            <div className={ styles.SocialIconChip }>
+                                <img src={google} />
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/dentalhousetijuana/">
+                            <div className={ styles.SocialIconChip }>
+                                <img src={instagram} />
+                            </div>
+                        </a>
                     </div>
                 </section>
                 {/* Welcome */}
@@ -103,9 +124,11 @@ class HomePage extends Component {
                             <div className={ styles.OfferCardBody }>
                                 <img src={ implant_icon }/>
                             </div>
-                            <div className={ styles.OfferCardFooter }>
-                                <button className="btn-accent">details</button>
-                            </div>
+                            {/* <div className={ styles.OfferCardFooter }>
+                                <Link to="/services#implants">
+                                    <button className="btn-accent">details</button>
+                                </Link>
+                            </div> */}
                         </div>
 
                         {/* Card 2 */}
@@ -116,9 +139,9 @@ class HomePage extends Component {
                             <div className={ styles.OfferCardBody }>
                                 <img src={ braces_icon }/>
                             </div>
-                            <div className={ styles.OfferCardFooter }>
+                            {/* <div className={ styles.OfferCardFooter }>
                                 <button className="btn-accent">details</button>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Card 3 */}
@@ -129,9 +152,9 @@ class HomePage extends Component {
                             <div className={ styles.OfferCardBody }>
                                 <img src={ root_icon }/>
                             </div>
-                            <div className={ styles.OfferCardFooter }>
+                            {/* <div className={ styles.OfferCardFooter }>
                                 <button className="btn-accent">details</button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className={ styles.OffersSectionContainerBody2 }>
@@ -144,7 +167,9 @@ class HomePage extends Component {
                         </p>
                     </div>
                     <div className={ styles.OffersSectionContainerFooter }>
-                        <button className="btn-accent">See all services</button>
+                        <Link to="/services">
+                            <button className="btn-accent" onClick={ () => {this.changeSelection('Servicios')} }>See all services</button>
+                        </Link>
                     </div>
                 </section>
                 {/* Insurances */}
@@ -214,9 +239,9 @@ class HomePage extends Component {
                     </div>
                 </section>
                 {/* Contact */}
-                <section className={ styles.ContactSectionWrapper }>
+                <section id="contact" className={ styles.ContactSectionWrapper }>
                     <div className={ styles.ConctactSectionHeader }>
-                        <h1>Contacto</h1>
+                        <h1>Contact</h1>
                     </div>
                     <ContactSectionComponent />
                 </section>

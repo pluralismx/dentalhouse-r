@@ -3,6 +3,7 @@
     background-size: cover;
     position: relative;
     padding: 1rem;
+    overflow-x: hidden;
 }
 
 .Filter {

@@ -182,7 +182,9 @@
 
     .WelcomeSectionBody img {
         margin: 0;
-        width: 45%;
+        max-width: 45%;
+        height: auto;
+        object-fit: cover;
     }
 }
 
@@ -219,6 +221,7 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--basic);
+    padding-bottom: 2rem;
 }
 
 .OfferCardHeader {

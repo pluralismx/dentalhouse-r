@@ -63,7 +63,6 @@
     border-bottom: 2px solid var(--primary);
     background-color: transparent;
     color: var(--basic);
-    box-shadow: 2px 2px 6px var(--shadows);
 }
 
 .InputBlock input, textarea {
@@ -72,10 +71,10 @@
     border: none;
     background-color: transparent;
     border-bottom: 2px solid var(--primary);
-    box-shadow: 2px 2px 6px var(--shadows);
     font-size: 18px;
     color: var(--basic);
     box-sizing: border-box;
+    box-shadow: 2px 2px 8px black;
 }
 
 .InputBlock input, textarea, select:focus {
@@ -84,6 +83,7 @@
 
 .InputBlock textarea {
     height: 12rem;
+    resize: none;
 }
 
 /* Submit */
@@ -122,12 +122,14 @@
         border-bottom: 2px solid var(--shadows);
         background-color: white;
         color: var(--shadows);
+        resize: none;
     }
     
     .InputBlock input, textarea {
         background-color: white;
         border-bottom: 2px solid var(--shadows);
         color: var(--shadows);
+        box-shadow: none;
     }
 
     .MapContainer {
